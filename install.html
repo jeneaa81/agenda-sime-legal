@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda SIME — Как установить приложение (инструкция)</title>
+  <meta
+    name="description"
+    content="Пошаговая инструкция за 1 минуту: как установить мобильный электронный дневник Agenda SIME для Android (школы и колледжи Молдовы)."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Agenda SIME — Установка приложения (за 2 шага)" />
+  <meta
+    property="og:description"
+    content="Наглядная инструкция для родителей и учеников: как подключиться к закрытому тесту и скачать Agenda SIME в Google Play."
+  />
+  <meta
+    property="og:image"
+    content="https://jeneaa81.github.io/agenda-sime-legal/icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://jeneaa81.github.io/agenda-sime-legal/icon.png"
+  />
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --soft: #64748b;
+      --indigo: #4f46e5;
+      --indigo-dark: #4338ca;
+      --blue: #1a73e8;
+      --emerald: #059669;
+      --emerald-dark: #047857;
+      --amber-bg: #fffbeb;
+      --amber-bd: #fde68a;
+      --amber-ink: #92400e;
+      --border: #e2e8f0;
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 16px 14px 44px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #4f46e5 0%, #6d28d9 100%);
+      color: #ffffff;
+      border-radius: 26px;
+      padding: 20px 18px 22px;
+      box-shadow: 0 12px 30px rgba(79, 70, 229, 0.24);
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+
+    .brand-sub {
+      font-size: 0.82rem;
+      opacity: 0.9;
+      margin: 2px 0 0;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.16);
+      padding: 3px;
+      border-radius: 999px;
+      flex-shrink: 0;
+    }
+
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.78rem;
+      padding: 6px 11px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .lang-btn.active {
+      background: #ffffff;
+      color: #4f46e5;
+    }
+
+    .hero h1 {
+      font-size: 1.22rem;
+      line-height: 1.3;
+      margin: 0 0 6px;
+      font-weight: 800;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 0.92rem;
+      opacity: 0.95;
+    }
+
+    .callout {
+      margin-top: 14px;
+      background: var(--amber-bg);
+      border: 1px solid var(--amber-bd);
+      color: var(--amber-ink);
+      border-radius: 18px;
+      padding: 14px 16px;
+      font-size: 0.88rem;
+    }
+
+    .callout-title {
+      font-weight: 800;
+      margin: 0 0 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.93rem;
+    }
+
+    .callout ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .callout li + li {
+      margin-top: 4px;
+    }
+
+    .card {
+      margin-top: 14px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+    }
+
+    .step-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .step-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: #ffffff;
+      flex-shrink: 0;
+    }
+
+    .badge-blue { background: var(--blue); }
+    .badge-green { background: var(--emerald); }
+    .badge-indigo { background: var(--indigo); }
+
+    .step-title {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 800;
+    }
+
+    .step-desc {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .mockup {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+
+    .mock-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--soft);
+      margin-bottom: 8px;
+    }
+
+    .mock-group-box {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .mock-group-name {
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: #1e293b;
+      margin-bottom: 10px;
+    }
+
+    .mock-btn-blue {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--blue);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.86rem;
+      padding: 9px 16px;
+      border-radius: 9px;
+      box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.2);
+    }
+
+    .mock-arrow {
+      font-size: 0.78rem;
+      color: var(--blue);
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    .mock-play-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: stretch;
+    }
+
+    .mock-play-pill {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 11px;
+      padding: 9px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .mock-chip-green {
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+
+    .mock-chip-solid {
+      background: var(--emerald);
+      color: #ffffff;
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.98rem;
+      padding: 14px 16px;
+      border-radius: 15px;
+      color: #ffffff;
+      text-align: center;
+      transition: transform 0.1s ease, filter 0.15s ease;
+    }
+
+    .cta-btn:active {
+      transform: scale(0.985);
+    }
+
+    .cta-blue {
+      background: var(--blue);
+      box-shadow: 0 6px 16px rgba(26, 115, 232, 0.25);
+    }
+
+    .cta-green {
+      background: var(--emerald);
+      box-shadow: 0 6px 16px rgba(5, 150, 105, 0.25);
+    }
+
+    .sub-link {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.82rem;
+      color: var(--indigo);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .sub-link:hover {
+      text-decoration: underline;
+    }
+
+    .faq-title {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    details {
+      border-top: 1px solid var(--border);
+      padding: 10px 0;
+    }
+
+    details:last-of-type {
+      padding-bottom: 0;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--ink);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      font-size: 1.1rem;
+      color: var(--indigo);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin: 8px 0 2px;
+      font-size: 0.87rem;
+      color: var(--muted);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: var(--soft);
+    }
+
+    .footer a {
+      color: var(--indigo);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    [data-lang] {
+      display: none;
+    }
+
+    html[data-active-lang="ru"] [data-lang="ru"] {
+      display: block;
+    }
+
+    html[data-active-lang="ro"] [data-lang="ro"] {
+      display: block;
+    }
+
+    html[data-active-lang="ru"] span[data-lang="ru"],
+    html[data-active-lang="ro"] span[data-lang="ro"],
+    html[data-active-lang="ru"] a[data-lang="ru"],
+    html[data-active-lang="ro"] a[data-lang="ro"] {
+      display: inline;
+    }
+
+    html[data-active-lang="ru"] .cta-btn[data-lang="ru"],
+    html[data-active-lang="ro"] .cta-btn[data-lang="ro"] {
+      display: flex;
+    }
+
+    html[data-active-lang="ru"] .sub-link[data-lang="ru"],
+    html[data-active-lang="ro"] .sub-link[data-lang="ro"] {
+      display: block;
+    }
+  </style>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var qLang = params.get("lang");
+      var saved = null;
+      try { saved = localStorage.getItem("agenda_install_lang"); } catch (e) {}
+      var nav = (navigator.language || "").toLowerCase();
+      var initial = qLang === "ro" || qLang === "ru"
+        ? qLang
+        : saved === "ro" || saved === "ru"
+        ? saved
+        : nav.indexOf("ro") === 0
+        ? "ro"
+        : "ru";
+      document.documentElement.setAttribute("data-active-lang", initial);
+      document.documentElement.setAttribute("lang", initial);
+    })();
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <!-- HEADER -->
+    <section class="hero">
+      <div class="hero-top">
+        <div class="brand">
+          <img src="https://jeneaa81.github.io/agenda-sime-legal/icon.png" alt="Agenda SIME" />
+          <div>
+            <p class="brand-title">Agenda SIME</p>
+            <p class="brand-sub" data-lang="ru">Электронный дневник (Android)</p>
+            <p class="brand-sub" data-lang="ro">Agendă electronică (Android)</p>
+          </div>
+        </div>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" id="btn-ru" onclick="setInstallLang('ru')">RU</button>
+          <button type="button" class="lang-btn" id="btn-ro" onclick="setInstallLang('ro')">RO</button>
+        </div>
+      </div>
+
+      <h1 data-lang="ru">Как установить приложение за 2 шага</h1>
+      <h1 data-lang="ro">Cum instalați aplicația în 2 pași</h1>
+
+      <p data-lang="ru">
+        Приложение сейчас проходит открытый для участников закрытый тест перед публикацией в Google Play. Порядок шагов обязателен — сначала Шаг 1, затем Шаг 2.
+      </p>
+      <p data-lang="ro">
+        Aplicația este în etapa de testare înaintea lansării oficiale în Google Play. Respectați ordinea pașilor — mai întâi Pasul 1, apoi Pasul 2.
+      </p>
+    </section>
+
+    <!-- IMPORTANT CALLOUT -->
+    <section class="callout">
+      <div class="callout-title">
+        <span>⚠️</span>
+        <span data-lang="ru">Важно перед началом (чтобы кнопка скачивания появилась сразу)</span>
+        <span data-lang="ro">Important înainte de a începe</span>
+      </div>
+      <ul data-lang="ru">
+        <li>На телефоне должен быть выбран <strong>один и тот же Gmail</strong> в браузере и в приложении Play Маркет.</li>
+        <li>Если эта страница открылась внутри <strong>Viber / WhatsApp</strong>, нажмите три точки <strong>⋮</strong> сверху справа и выберите <strong>«Открыть в Chrome»</strong> — в обычном браузере Google не просит вводить пароль заново.</li>
+      </ul>
+      <ul data-lang="ro">
+        <li>În browser și în Magazin Play trebuie să fie selectat <strong>același cont Gmail</strong>.</li>
+        <li>Dacă pagina s-a deschis în <strong>Viber / WhatsApp</strong>, apăsați cele 3 puncte <strong>⋮</strong> de sus și alegeți <strong>„Deschide în Chrome”</strong> — astfel nu vi se va cere parola din nou.</li>
+      </ul>
+    </section>
+
+    <!-- STEP 1 -->
+    <section class="card">
+      <div class="step-head">
+        <span class="step-badge badge-blue">1</span>
+        <h2 class="step-title" data-lang="ru">Вступите в Google Группу тестеров</h2>
+        <h2 class="step-title" data-lang="ro">Alăturați-vă grupului Google</h2>
+      </div>
+
+      <p class="step-desc" data-lang="ru">
+        Без вступления в эту группу Google Play скроет приложение как закрытое. Нажмите кнопку ниже, а на открывшейся странице — синюю кнопку <strong>«Присоединиться к группе»</strong>.
+      </p>
+      <p class="step-desc" data-lang="ro">
+        Fără acest pas, Google Play va afișa că aplicația nu este disponibilă. Deschideți linkul și apăsați butonul albastru <strong>„Alăturați-vă grupului”</strong>.
+      </p>
+
+      <div class="mockup">
+        <div class="mock-label" data-lang="ru">Как это выглядит на экране:</div>
+        <div class="mock-label" data-lang="ro">Cum arată pe ecran:</div>
+        <div class="mock-group-box">
+          <div class="mock-group-name">Agenda SIME Testers</div>
+          <div class="mock-btn-blue">
+            <span data-lang="ru">👤 Присоединиться к группе</span>
+            <span data-lang="ro">👤 Alăturați-vă grupului</span>
+          </div>
+          <div class="mock-arrow" data-lang="ru">👆 Нажмите эту кнопку и вернитесь сюда на Шаг 2</div>
+          <div class="mock-arrow" data-lang="ro">👆 Apăsați acest buton și reveniți la Pasul 2</div>
+        </div>
+      </div>
+
+      <a
+        class="cta-btn cta-blue"
+        data-lang="ru"
+        href="https://groups.google.com/g/agenda-sime-testers"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        1️⃣ Открыть Google Группу и нажать «Присоединиться»
+      </a>
+      <a
+        class="cta-btn cta-blue"
+        data-lang="ro"
+        href="https://groups.google.com/g/agenda-sime-testers"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        1️⃣ Deschide Grupul Google și apasă „Alăturați-vă”
+      </a>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="card">
+      <div class="step-head">
+        <span class="step-badge badge-green">2</span>
+        <h2 class="step-title" data-lang="ru">Примите приглашение и скачайте в Google Play</h2>
+        <h2 class="step-title" data-lang="ro">Acceptați testarea și descărcați din Google Play</h2>
+      </div>
+
+      <p class="step-desc" data-lang="ru">
+        После Шага 1 откройте ссылку ниже, нажмите <strong>«Стать тестировщиком»</strong>, затем ссылку <strong>«Скачать в Google Play»</strong>.
+      </p>
+      <p class="step-desc" data-lang="ro">
+        După Pasul 1, accesați butonul de mai jos, apăsați <strong>„Deveniți tester”</strong>, apoi <strong>„Descărcați de pe Google Play”</strong>.
+      </p>
+
+      <div class="mockup">
+        <div class="mock-label" data-lang="ru">Что нажать по порядку:</div>
+        <div class="mock-label" data-lang="ro">Ce să apăsați în ordine:</div>
+        <div class="mock-play-flow">
+          <div class="mock-play-pill">
+            <span data-lang="ru">① Страница теста</span>
+            <span data-lang="ro">① Pagina de testare</span>
+            <span class="mock-chip-green" data-lang="ru">Стать тестировщиком</span>
+            <span class="mock-chip-green" data-lang="ro">Deveniți tester</span>
+          </div>
+          <div class="mock-play-pill">
+            <span data-lang="ru">② Страница Play Маркета</span>
+            <span data-lang="ro">② Magazin Play</span>
+            <span class="mock-chip-solid" data-lang="ru">Установить</span>
+            <span class="mock-chip-solid" data-lang="ro">Instalează</span>
+          </div>
+        </div>
+      </div>
+
+      <a
+        class="cta-btn cta-green"
+        data-lang="ru"
+        href="https://play.google.com/apps/testing/md.sime.agenda.client"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        2️⃣ Стать тестировщиком и скачать в Google Play
+      </a>
+      <a
+        class="cta-btn cta-green"
+        data-lang="ro"
+        href="https://play.google.com/apps/testing/md.sime.agenda.client"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        2️⃣ Deveniți tester și descărcați din Google Play
+      </a>
+
+      <a
+        class="sub-link"
+        data-lang="ru"
+        href="https://play.google.com/store/apps/details?id=md.sime.agenda.client"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Если вы уже в тесте — прямая ссылка в Play Маркет →
+      </a>
+      <a
+        class="sub-link"
+        data-lang="ro"
+        href="https://play.google.com/store/apps/details?id=md.sime.agenda.client"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Dacă sunteți deja tester — link direct Magazin Play →
+      </a>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="card">
+      <div class="step-head">
+        <span class="step-badge badge-indigo">3</span>
+        <h2 class="step-title" data-lang="ru">Первый вход в приложение</h2>
+        <h2 class="step-title" data-lang="ro">Prima conectare în aplicație</h2>
+      </div>
+      <p class="step-desc" style="margin-bottom: 0;" data-lang="ru">
+        После установки откройте <strong>Agenda SIME</strong>, выберите роль (<strong>Родитель</strong> или <strong>Ученик</strong>) и введите ваш обычный логин и пароль от сайта <strong>agenda.sime.md</strong>. Пароль никуда не передаётся и хранится только в вашем телефоне.
+      </p>
+      <p class="step-desc" style="margin-bottom: 0;" data-lang="ro">
+        După instalare, deschideți <strong>Agenda SIME</strong>, alegeți rolul (<strong>Părinte</strong> sau <strong>Elev</strong>) și introduceți datele dvs. obișnuite de acces de pe <strong>agenda.sime.md</strong>. Parola nu este transmisă dezvoltatorului și rămâne doar pe telefonul dvs.
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card">
+      <h2 class="faq-title" data-lang="ru">Если что-то не получается (частые вопросы)</h2>
+      <h2 class="faq-title" data-lang="ro">Dacă întâmpinați probleme (întrebări frecvente)</h2>
+
+      <details>
+        <summary>
+          <span data-lang="ru">Пишет «Приложение недоступно для этого аккаунта» на Шаге 2</span>
+          <span data-lang="ro">Scrie „Aplicația nu este disponibilă pentru acest cont” la Pasul 2</span>
+        </summary>
+        <p data-lang="ru">
+          1) Убедитесь, что вы действительно нажали «Присоединиться к группе» в Шаге 1.<br />
+          2) Проверьте, что в браузере (справа сверху кружок с фото/буквой) выбран <strong>тот же Gmail</strong>, что и в Play Маркете на этом телефоне.<br />
+          3) Подождите 1–2 минуты после Шага 1 и обновите страницу Шага 2.
+        </p>
+        <p data-lang="ro">
+          1) Verificați că ați apăsat „Alăturați-vă grupului” la Pasul 1.<br />
+          2) Verificați că în browser este selectat <strong>același cont Gmail</strong> ca în aplicația Magazin Play.<br />
+          3) Așteptați 1–2 minute după Pasul 1 și reîmprospătați pagina de la Pasul 2.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          <span data-lang="ru">На телефоне несколько Google-аккаунтов (рабочий и личный)</span>
+          <span data-lang="ro">Aveți mai multe conturi Google pe telefon</span>
+        </summary>
+        <p data-lang="ru">
+          Откройте приложение Play Маркет → нажмите на иконку профиля справа сверху → посмотрите, какой Gmail там активен. Именно под этим адресом нужно нажать Шаг 1 и Шаг 2 в браузере Chrome.
+        </p>
+        <p data-lang="ro">
+          Deschideți aplicația Magazin Play → apăsați pe pictograma profilului din dreapta sus și vedeți ce adresă Gmail este activă. Exact cu același Gmail accesați Pasul 1 și Pasul 2 în Chrome.
+        </p>
+      </details>
+
+      <details>
+        <summary>
+          <span data-lang="ru">Подходит ли для iPhone (iOS)?</span>
+          <span data-lang="ro">Funcționează și pe iPhone (iOS)?</span>
+        </summary>
+        <p data-lang="ru">
+          На данный момент доступна только версия для <strong>Android</strong> (Google Play).
+        </p>
+        <p data-lang="ro">
+          Momentan este disponibilă doar versiunea pentru <strong>Android</strong> (Google Play).
+        </p>
+      </details>
+    </section>
+
+    <div class="footer">
+      <a href="https://jeneaa81.github.io/agenda-sime-legal/privacy-policy.html" data-lang="ru">
+        Политика конфиденциальности (Zero-Server-Storage)
+      </a>
+      <a href="https://jeneaa81.github.io/agenda-sime-legal/privacy-policy.html" data-lang="ro">
+        Politica de confidențialitate (Zero-Server-Storage)
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function setInstallLang(lang) {
+      document.documentElement.setAttribute("data-active-lang", lang);
+      document.documentElement.setAttribute("lang", lang);
+      try { localStorage.setItem("agenda_install_lang", lang); } catch (e) {}
+      var btnRu = document.getElementById("btn-ru");
+      var btnRo = document.getElementById("btn-ro");
+      if (btnRu && btnRo) {
+        btnRu.className = "lang-btn" + (lang === "ru" ? " active" : "");
+        btnRo.className = "lang-btn" + (lang === "ro" ? " active" : "");
+      }
+    }
+    setInstallLang(document.documentElement.getAttribute("data-active-lang") || "ru");
+  </script>
+</body>
+</html>
