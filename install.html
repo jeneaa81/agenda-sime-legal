@@ -272,43 +272,93 @@
     .mock-play-flow {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
       align-items: stretch;
     }
 
-    .mock-play-pill {
+    .mock-subscreen {
       background: #ffffff;
       border: 1px solid #cbd5e1;
-      border-radius: 11px;
-      padding: 9px 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      font-size: 0.85rem;
-      font-weight: 600;
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .mock-subscreen-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--soft);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 6px;
+    }
+
+    .mock-app-title {
+      font-size: 1rem;
+      font-weight: 800;
       color: #1e293b;
+      margin: 0;
     }
 
-    .mock-chip-green {
-      background: #ecfdf5;
-      color: #047857;
-      border: 1px solid #a7f3d0;
-      padding: 4px 10px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 0.8rem;
-      white-space: nowrap;
+    .mock-app-dev {
+      font-size: 0.76rem;
+      color: var(--soft);
+      margin: 2px 0 10px;
     }
 
-    .mock-chip-solid {
-      background: var(--emerald);
+    .mock-pill-blue {
+      display: inline-block;
+      background: #0b57d0;
       color: #ffffff;
-      padding: 5px 12px;
-      border-radius: 8px;
       font-weight: 700;
+      font-size: 0.86rem;
+      padding: 9px 22px;
+      border-radius: 999px;
+      box-shadow: 0 0 0 4px rgba(11, 87, 208, 0.2);
+    }
+
+    .mock-tester-badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 6px 14px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .mock-sentence {
+      font-size: 0.85rem;
+      color: #334155;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .mock-inline-link {
+      display: inline-block;
+      color: #0284c7;
+      background: #e0f2fe;
+      border: 1.5px dashed #0284c7;
+      border-radius: 6px;
+      padding: 1px 7px;
+      font-weight: 800;
+    }
+
+    .mock-arrow-warn {
+      font-size: 0.79rem;
+      color: #b45309;
+      background: #fef3c7;
+      border-radius: 8px;
+      padding: 6px 8px;
+      font-weight: 700;
+      margin-top: 9px;
+    }
+
+    .mock-note {
+      margin: 10px 0 0;
       font-size: 0.8rem;
-      white-space: nowrap;
+      color: var(--soft);
     }
 
     .cta-btn {
@@ -437,7 +487,9 @@
     }
 
     html[data-active-lang="ru"] .cta-btn[data-lang="ru"],
-    html[data-active-lang="ro"] .cta-btn[data-lang="ro"] {
+    html[data-active-lang="ro"] .cta-btn[data-lang="ro"],
+    html[data-active-lang="ru"] .mock-play-flow[data-lang="ru"],
+    html[data-active-lang="ro"] .mock-play-flow[data-lang="ro"] {
       display: flex;
     }
 
@@ -570,29 +622,64 @@
       </div>
 
       <p class="step-desc" data-lang="ru">
-        После Шага 1 откройте ссылку ниже, нажмите <strong>«Стать тестировщиком»</strong>, затем ссылку <strong>«Скачать в Google Play»</strong>.
+        После Шага 1 откройте ссылку ниже: сначала нажмите синюю кнопку <strong>«Станьте тестировщиком»</strong> (<em>Become a tester</em>), а на следующем экране нажмите голубую ссылку в тексте <strong>«скачайте его из Google Play»</strong>.
       </p>
       <p class="step-desc" data-lang="ro">
-        După Pasul 1, accesați butonul de mai jos, apăsați <strong>„Deveniți tester”</strong>, apoi <strong>„Descărcați de pe Google Play”</strong>.
+        După Pasul 1, deschideți linkul de mai jos: apăsați butonul albastru <strong>„Deveniți tester”</strong> (<em>Become a tester</em>), apoi pe ecranul următor apăsați linkul albastru din text <strong>„descărcați-l de pe Google Play”</strong>.
       </p>
 
       <div class="mockup">
-        <div class="mock-label" data-lang="ru">Что нажать по порядку:</div>
-        <div class="mock-label" data-lang="ro">Ce să apăsați în ordine:</div>
-        <div class="mock-play-flow">
-          <div class="mock-play-pill">
-            <span data-lang="ru">① Страница теста</span>
-            <span data-lang="ro">① Pagina de testare</span>
-            <span class="mock-chip-green" data-lang="ru">Стать тестировщиком</span>
-            <span class="mock-chip-green" data-lang="ro">Deveniți tester</span>
+        <div class="mock-label" data-lang="ru">Как выглядят 2 экрана по очереди:</div>
+        <div class="mock-label" data-lang="ro">Cum arată cele 2 ecrane pe rând:</div>
+
+        <div class="mock-play-flow" data-lang="ru">
+          <div class="mock-subscreen">
+            <div class="mock-subscreen-tag">Экран ①</div>
+            <p class="mock-app-title">Agenda SIME <span style="font-weight:500;font-size:0.78rem;color:#64748b;">(или «Повестка дня SIME»)</span></p>
+            <p class="mock-app-dev">Pontic Gate Labs / Лаборатории Понтик Гейт</p>
+            <div class="mock-pill-blue">Станьте тестировщиком</div>
+            <div class="mock-arrow">👆 Нажмите эту синюю кнопку</div>
           </div>
-          <div class="mock-play-pill">
-            <span data-lang="ru">② Страница Play Маркета</span>
-            <span data-lang="ro">② Magazin Play</span>
-            <span class="mock-chip-solid" data-lang="ru">Установить</span>
-            <span class="mock-chip-solid" data-lang="ro">Instalează</span>
+
+          <div class="mock-subscreen">
+            <div class="mock-subscreen-tag">Экран ②</div>
+            <div class="mock-tester-badge">Вы — тестировщик.</div>
+            <p class="mock-sentence">
+              Если у вас не установлено приложение Agenda SIME, <span class="mock-inline-link">скачайте его из Google Play</span>.
+            </p>
+            <div class="mock-arrow-warn">
+              👆 Важно: большой кнопки «Установить» тут нет — нажмите именно на эту голубую ссылку в тексте!
+            </div>
           </div>
         </div>
+
+        <div class="mock-play-flow" data-lang="ro">
+          <div class="mock-subscreen">
+            <div class="mock-subscreen-tag">Ecran ①</div>
+            <p class="mock-app-title">Agenda SIME</p>
+            <p class="mock-app-dev">Pontic Gate Labs</p>
+            <div class="mock-pill-blue">Deveniți tester / Become a tester</div>
+            <div class="mock-arrow">👆 Apăsați acest buton albastru</div>
+          </div>
+
+          <div class="mock-subscreen">
+            <div class="mock-subscreen-tag">Ecran ②</div>
+            <div class="mock-tester-badge">Sunteți tester / You are a tester.</div>
+            <p class="mock-sentence">
+              Dacă nu aveți aplicația instalată, <span class="mock-inline-link">descărcați-l de pe Google Play</span>.
+            </p>
+            <div class="mock-arrow-warn">
+              👆 Important: nu există un buton mare „Instalează” aici — apăsați exact pe acest link din text!
+            </div>
+          </div>
+        </div>
+
+        <p class="mock-note" data-lang="ru">
+          💡 Если Chrome перевёл страницу, названия <em>«Повестка дня SIME»</em> и <em>«Лаборатории Понтик Гейт»</em> (или английский текст <em>Become a tester / download it on Google Play</em>) — это норма, вы на нужной странице.
+        </p>
+        <p class="mock-note" data-lang="ro">
+          💡 Dacă pagina apare în engleză (<em>Become a tester</em> / <em>download it on Google Play</em>) sau tradusă automat, sunteți pe pagina corectă.
+        </p>
       </div>
 
       <a
